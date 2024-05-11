@@ -1,19 +1,20 @@
 name: PIFu
 channels:
-- pytorch
-- defaults
+  - conda-forge
+  - pytorch
+  - defaults
 dependencies:
-- opencv
-- pytorch
-- json
-- pyexr
-- cv2
-- PIL
-- skimage
-- tqdm
-- pyembree
-- shapely
-- rtree
-- xxhash
-- trimesh
-- PyOpenGL
+  - python=3.8  # Python 버전 지정
+  - opencv
+  - pytorch
+  - pillow  # PIL 대신 pillow 사용
+  - scikit-image  # skimage 대신 scikit-image 사용
+  - tqdm
+  - shapely
+  - rtree
+  - xxhash
+  - trimesh
+  - pyopengl  # PyOpenGL 대신 pyopengl 사용
+  - pip:
+    - pyexr  # pip를 통한 설치가 필요할 수 있음
+    - pyembree  # pip를 통한 설치가 필요할 수 있음

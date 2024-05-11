@@ -3,7 +3,7 @@ import numpy as np
 from .mesh_util import *
 from .sample_util import *
 from .geometry import *
-import cv2
+#import cv2
 from PIL import Image
 from tqdm import tqdm
 
